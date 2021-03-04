@@ -10,6 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  	 	crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+		<style>
+			#map { 
+				height: 500px;
+			}	
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -57,7 +68,7 @@
 								</header>
 								<a href="elements.html" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/lenny2000/lenny2000.io" class="button large">Code</a></li>
+									<li><a href="https://github.com/lenny2000/lenny2000.io" target="_blank" class="button large">Code</a></li>
 								</ul>
 							</article>
 
@@ -163,35 +174,50 @@
 								</ul>
 							</form>
 						</section>
-						<section class="split contact">
+						<section class="">
 							<section class="alt">
 								<h3>Address</h3>
 								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								Nashville,  00000-0000</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p>(000) 000-0000</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">lennyt007@gmail.com</a></p>
+								<p>lennyt007@gmail.com</p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
 									<li><a href="#" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/lenny2000" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/lenny2000" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
+							<div id = "map"></div>
 						</section>
 					</footer>
-
+					<!--Map deklaration-->
+					<script>
+						L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+   						attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    					maxZoom: 18,
+    					id: 'mapbox/streets-v11',
+    					tileSize: 512,
+    					zoomOffset: -1,
+    					accessToken: 'pk.eyJ1IjoibGVubnkyMDAwIiwiYSI6ImNrbHY3amc4NjAzNTcydXJ6eWpwdnpkcjgifQ.4Nn9S5D_bWcni2x_2yLRSQ'
+						})
+						tiles.addTo(mymap);
+					</script>
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
+				
+					
+				
 			</div>
 
 		<!-- Scripts -->
