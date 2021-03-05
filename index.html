@@ -17,10 +17,11 @@
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
 		<style>
-			#map { 
-				height: 500px;
+			#map1 { 
+				height: 200px;
 			}	
 		</style>
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -64,7 +65,7 @@
 								<header class="major">
 									
 									<h2><a href="Project1.html">My first Project</a></h2>
-									<p>My first bigger project was an Webportfolio, which I programmed with vs, css and html.<br> I first used a html5 website as an template and modified it. </p>
+									<p>My first bigger project was an Webportfolio, which I programmed with javascript, python, css and html.<br> I first used a html5 website as an template and modified it. </p>
 								</header>
 								<a href="elements.html" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 								<ul class="actions special">
@@ -182,7 +183,7 @@
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p>(000) 000-0000</a></p>
+								<p>(000) 000-0000</p>
 							</section>
 							<section>
 								<h3>Email</h3>
@@ -195,26 +196,17 @@
 							<li><a href="https://github.com/lenny2000" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
-							<div id = "map"></div>
+							<div id = "map1"></div>
 						</section>
 					</footer>
-					<!--Map deklaration-->
-					<script>
-						L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-   						attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    					maxZoom: 18,
-    					id: 'mapbox/streets-v11',
-    					tileSize: 512,
-    					zoomOffset: -1,
-    					accessToken: 'pk.eyJ1IjoibGVubnkyMDAwIiwiYSI6ImNrbHY3amc4NjAzNTcydXJ6eWpwdnpkcjgifQ.4Nn9S5D_bWcni2x_2yLRSQ'
-						})
-						tiles.addTo(mymap);
-					</script>
+				
+				
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
+					
 				
 					
 				
@@ -228,6 +220,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/Maps/Map1.js"></script></script>
+			
 
 	</body>
 </html>
