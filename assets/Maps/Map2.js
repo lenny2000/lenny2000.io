@@ -11,7 +11,5 @@ function map2()
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoibGVubnkyMDAwIiwiYSI6ImNrbHY3ZDBlMzBiajYyd213a2w2Z3F4Y2UifQ._f0UGwVtFAbUFwINIBBuZw'
     }).addTo(mymap);
-    var marker = L.marker([lat, lng]).addTo(mymap);
-    marker.bindPopup("Philips Haus").openPopup();  
 }
 map2();
